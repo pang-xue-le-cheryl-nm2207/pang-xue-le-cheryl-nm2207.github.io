@@ -1,0 +1,214 @@
+html, body {
+    scroll-behavior: smooth;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0%;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFCF9;
+}
+
+
+/* Sections of Layout
+-------------------------------------- */
+#section1{
+    height:800px;
+    background: #ED727B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.imageTitle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.imageEnter {
+    display: block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+
+#section2{
+    height:800px;
+    background: #BDB7DC;
+    display: inline-block;
+    width: 100%;
+}
+
+#section3{
+    height:800px;
+    background: #BDB7DC;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#section4{
+    height:800px;
+    background: #BDB7DC;
+    display: inline-block;
+    width: 100%;
+}
+
+#section5{
+    height:800px;
+    background: #BDB7DC;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#section6{
+    height:800px;
+    background: #BDB7DC;
+    display: inline-block;
+    width: 100%;
+}
+
+#section7{
+    height:800px;
+    background: #BDB7DC;
+    display: inline-block;
+    width: 100%;
+}
+
+#section8{
+    height:800px;
+    background: #BDB7DC;
+    display: inline-block;
+    width: 100%;
+}
+
+#section9{
+    height:800px;
+    background: #BDB7DC;
+    display: inline-block;
+    width: 100%;
+}
+
+#section10{
+    height:800px;
+    background: #ED727B;
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+/* Text Formatting Colour
+-------------------------------------- */
+.pinkText { 
+    color:#ED727B; 
+}
+
+.blackText { 
+    color:#342D38; 
+}
+
+/* Formatting Position
+-------------------------------------- */
+
+.textPos{ 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+}
+
+
+.topText{
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.headingPos{ 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+.linechart-container{
+    margin-left: 9%;
+    margin-right: auto;
+}
+
+.barChartFormat{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+}
+
+.radarChartFormat{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: auto;
+    /* height: 494px !important;
+    width: 989px !important; */
+}
+
+ 
+#pieChart{
+    margin-left: 10%;
+    margin-right: auto;
+    width: 550px;
+}
+
+
+#percentageImage{
+    width: 400px;
+    margin-left: 10px;
+}
+
+/* Table Formatting
+-------------------------------------- */
+table {
+    border-collapse: collapse;
+    border-color: none;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: auto;
+}
+  
+td {
+    padding: 5px;
+    padding-top: 20px;
+}
+
+
+/* Button Formatting
+-------------------------------------- */
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+/* dropDown Formatting
+-------------------------------------- */
+#dropDown{
+    display:inline;
+    margin-top: 30px;  
+    margin-left: 45%;
+    justify-content: center;
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #342D38;
+    color:#FFFCF9;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}

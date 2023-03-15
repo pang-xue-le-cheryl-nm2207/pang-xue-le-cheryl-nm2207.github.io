@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!-- load fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--chart js src-->       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+        <title>NM2207 Final Project</title>
+        <script defer type="text/javascript" src="appscripts/main.js">
+        </script>
+    </head>
+
+    <body>
+
+        <!-- main content starts here -->
+        <div id="section1">
+            <image src="css/images/title.svg" class="imageTitle"/>
+            <a href="#section2">  <img src="css/images/enter.svg" class="imageEnter"/> </a>
+        </div>
+
+        <div id="section2">
+            <h1 class="headingPos">WHAT IS GOING ON? <br> IS <span class="pinkText">ROMANCE</span> DEAD?</h1>
+            <p class="textPos">Feeling single? Don’t worry, you are not alone. Over the last 10 years, the proportion of singles across all age groups rose in Singapore, most prominently among those aged between 25 and 34. </p>
+            <div class="linechart-container" style="position: relative; height:30vh; width:60vw">
+                <canvas class="textPos" id="lineChart"></canvas>
+            </div>
+        </div>
+
+        <div id="section3" style="overflow-x:auto;">
+            <h1 class="headingPos">WHICH AGE GROUP HAS THE <span class="pinkText">LARGEST <br> INCREASE </span>IN NUMBER OF SINGLES? </h1>
+            <table >
+                <tr>
+                  <td><button onclick="changeImage('css/images/increase-1.svg')"><image src="css/images/20-24years.svg" width="80%" height="auto"/></button></td>
+                  <td><button onclick="changeImage('css/images/increase-2.svg')"><image src="css/images/25-29years.svg" width="80%" height="auto"/></button></td>
+                  <td rowspan="3"><img id="percentageImage" src="css/images/increase-1.svg" /></td>
+                </tr>
+                <tr>
+                  <td><button onclick="changeImage('css/images/increase-3.svg')"><image src="css/images/30-34years.svg" width="80%" height="auto" /></button></td>
+                  <td><button onclick="changeImage('css/images/increase-4.svg')"><image src="css/images/35-38years.svg" width="80%" height="auto"/></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="changeImage('css/images/increase-5.svg')"><image src="css/images/40-44years.svg" width="80%" height="auto"/></button></td>
+                    <td><button onclick="changeImage('css/images/increase-6.svg')"><image src="css/images/45-49years.svg" width="80%" height="auto"/></button></td>
+                  </tr>
+              </table>
+        </div>
+
+        <!-- Changing Image Code -->
+        <!------------------------->
+        <script>
+            function changeImage(fileName) {
+                let img = document.querySelector("#percentageImage");
+                img.setAttribute("src", fileName);
+            }
+        </script>
+        <!----------------------------------->
+        <!-- Changing Image Code Ends Here -->
+
+
+        <div id="section4">
+            <p class="headingPos"> Ok, too much stats? Let's zoom in on the youngters, aka those aged 20-34 years. Perhaps it is more relatable for you! I've also split the data according to gender. Click on buttons to find out more.</p>
+            <canvas id="barChart" class="barChartFormat"></canvas>
+            <select id=dropDown onchange="updateChart(this)">
+                <option value="group1">20-24 Years</option>
+                <option value="group2">25-29 Years</option>
+                <option value="group3">30-34 Years</option>
+            </select>
+        </div>
+
+        <div id="section5" style="overflow-x:auto;">
+            <h1 class="headingPos">MANY SINGLES <span class="pinkText">HAVE NOT</span> DATED BEFORE. </h1> 
+            <p class="textPos">In another study, among the respondents who were single, 50 per cent were not currently dating -- and within this group, 38 per cent had never dated before. </p>
+            <table>
+                <tr>
+                  <td><image src="css/images/currentlyDating.svg" width= "350px" height="auto"/></td>
+                  <td><canvas id="pieChart" ></canvas></td>
+                </tr>
+              </table>
+        </div>
+
+        <div id="section6">
+            <h1 class="headingPos"> WHY IS THAT SO?<br> THE REASONS FOR NOT DATING. </h1> 
+            <p class="textPos"> What could be the cause of their singlehood?</p>
+            <canvas id="barChart-2" class="barChartFormat" ></canvas>
+        </div>
+
+        <div id="section7">
+            <h1 class="headingPos"> HOW PEOPLE WOULD LIKE <br> TO MEET THEIR POTENTIAL PARTNERS? </h1> 
+            <p class="textPos">Asked about their preference of how they want to meet someone who is potentially partner material, 
+                singles clearly favoured in-person, face-to-face interactions as the ideal starting point. Meeting via social activities, 
+                getting introduced by a friend or colleague, and through religious activities or organisations are highly preferred. 
+                Establishing a connection via online means ranked lower than these offline means.
+            </p>
+            <canvas id="barChart-3" class="barChartFormat" ></canvas>
+        </div>
+
+        <div id="section8">
+            <h1 class="topText"> SO...<br>PEOPLE PREFER OFFLINE INTERACTIONS. </h1> 
+            <h1 class="headingPos"> COULD THAT BE THE CAUSE OF THE RISE IN<br><span class="blackText"> SINGLEHOOD</span> IN SINGAPORE ? </h1>
+            <h1 class="headingPos">LET’S FIND OUT HOW PEOPLE (THAT ARE <br>CURRENTLY DATING) MET THEIR PARTNER.</h1> 
+        </div>
+
+        <div id="section9"> 
+            <h1 class="headingPos">THERE IS AN <span class= "pinkText">INCREASING TREND</span> OF PEOPLE <br> MEETING THROUGH ONLINE CHANNELS </h1>
+            <div class="linechart-container" style="position: relative; height:35vh; width:70vw">
+                <canvas id="radarChart" class="radarChartFormat" ></canvas>
+            </div>
+
+        </div>
+        <div id="section10"> 
+            <h1 class="headingPos">ending</h1>
+            
+
+        </div>
+
+
+    </body>
