@@ -8,30 +8,49 @@ html, body {
     color: #FFFCF9;
 }
 
+section {
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
 
 /* Sections of Layout
 -------------------------------------- */
 #section1{
-    height:800px;
+
     background: #ED727B;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     width: 100%;
 }
 .imageTitle {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-self: center;
+    margin-top: 10% ;
     width: 50%;
+    height:auto;
 }
 
+
 .imageEnter {
-    display: block;
-    margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
+    display: flex;
+    transform: translate(0px, 30px);
+    align-self: center;
+    margin-top: 50% ;
+    width: 90%;
+    height:auto;
+}
+.imageEnter:hover {
+    transform: translateY(-50px) rotate(45deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.foreground{
+    transform: translate(0px, 0px);
 }
 
 
@@ -95,7 +114,7 @@ html, body {
 
 #section10{
     height:800px;
-    background: #ED727B;
+    background: #BDB7DC;
     display: inline-block;
     width: 100%;
 }
@@ -118,7 +137,12 @@ html, body {
 .textPos{ 
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 50px;
+    margin-top: 40px;
+}
+
+.additionalTextPos{
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 
@@ -131,11 +155,16 @@ html, body {
 .headingPos{ 
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .linechart-container{
     margin-left: 9%;
+    margin-right: auto;
+}
+
+.radarchart-container{
+    margin-left: 13%;
     margin-right: auto;
 }
 
@@ -150,15 +179,13 @@ html, body {
     margin-top: 50px;
     margin-left: 10%;
     margin-right: auto;
-    /* height: 494px !important;
-    width: 989px !important; */
 }
 
  
 #pieChart{
-    margin-left: 10%;
+    margin-left: auto;
     margin-right: auto;
-    width: 550px;
+    width: 650px;
 }
 
 
@@ -192,6 +219,10 @@ button {
     cursor: pointer;
 }
 
+
+button:hover > img {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  }
 
 /* dropDown Formatting
 -------------------------------------- */
