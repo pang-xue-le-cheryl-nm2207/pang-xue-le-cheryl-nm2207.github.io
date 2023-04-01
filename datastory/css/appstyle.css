@@ -1,0 +1,357 @@
+html, body {
+    scroll-behavior: smooth;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0%;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFCF9;
+}
+
+
+/* nav bar formatting
+-------------------------------------- */
+
+nav {
+    position: fixed;
+    background-color: #A89EDA;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    color: #FFFCF9;
+    padding: 30px ;
+    text-align: left;
+    z-index: 9999;/* to make nav bar the absolute top*/
+    transition: top 0.3s ease-in-out;
+}
+
+
+.nav-hide {
+    top: -100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+  
+
+nav a {
+    display: flex;
+    
+    background-color: transparent;
+    border: 2px solid #FFFCF9;
+    color: #FFFCF9;
+    border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav a:hover {
+    background-color: #FFFCF9;
+    color: #A89EDA;
+    border: 2px solid #FFFCF9;
+}
+
+
+/* Sections of Layout
+-------------------------------------- */
+
+#section2{
+    padding-top: 70px; /* add 50px of space to the bottom */
+    height:800px;
+    background: #A89EDA;
+    display: inline-block;
+    width: 100%;
+}
+
+#section3{
+    height:800px;
+    background: #A89EDA;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#section4{
+    height:800px;
+    background: #A89EDA;
+    display: inline-block;
+    width: 100%;
+}
+
+#section5{
+    height:800px;
+    background: #A89EDA;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#section6{
+    height:800px;
+    background: #A89EDA;
+    display: inline-block;
+    width: 100%;
+}
+
+#section7{
+    height:800px;
+    background: #A89EDA;
+    display: inline-block;
+    width: 100%;
+}
+
+#section8{
+    height:800px;
+    background: #A89EDA;
+    display: inline-block;
+    width: 100%;
+}
+
+#section9{
+    height:1000px;
+    background: #A89EDA;
+    display: inline-block;
+    width: 100%;
+}
+
+#endSection{
+    position: relative;
+    height: 800px;
+    background: #ED727B;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+/* Text Formatting Colour
+-------------------------------------- */
+.pinkText { 
+    color:#F1939A; 
+}
+
+.blackText { 
+    color:#342D38; 
+}
+
+
+/* Formatting Positions
+-------------------------------------- */
+
+.textPos{ 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 40px;
+}
+
+.additionalTextPos{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.topText{
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.headingPos{ 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+.linechart-container{
+    margin-left: 9%;
+    margin-right: auto;
+}
+
+
+.barchart-container{
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+.radarchart-container{
+    margin-left: 13%;
+    margin-right: auto;
+}
+
+.barChartFormat{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+}
+
+.radarChartFormat{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+ 
+#pieChart{
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+}
+
+
+#percentageImage{
+    width: 400px;
+    margin-left: 10px;
+}
+
+/* Table Formatting
+-------------------------------------- */
+table {
+    border-collapse: collapse;
+    border-color: none;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: auto;
+}
+  
+td {
+    padding: 5px;
+    padding-top: 20px;
+}
+
+
+/* Button Formatting
+-------------------------------------- */
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+button:hover > img {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  }
+
+/* dropDown Formatting
+-------------------------------------- */
+#dropDown{
+    display:inline;
+    margin-top: 30px;  
+    margin-left: 45%;
+    justify-content: center;
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #342D38;
+    color:#FFFCF9;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+
+/* contact form Formatting
+-------------------------------------- */
+
+.contactForm{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.contactForm input[type="text"] {
+    border: #FFFCF9;
+    border-radius: 20px; /* set the border radius to make it round*/
+    padding: 10px; /* add some padding to make the input look nicer */
+    font-size: 16px; 
+}
+
+textarea{
+    border: #FFFCF9;
+    border-radius: 20px; /* set the border radius to make it round*/
+    padding: 8px; /* add some padding to make the input look nicer */
+    font-size: 16px; 
+}
+
+.btn {
+display: block;
+margin-top: 30px;
+margin-right: auto;
+margin-left: auto;
+background-color: #FFFCF9;
+color: #342D38;
+border-radius: 25px;
+padding: 15px 25px;
+font-size: 16px;
+cursor: pointer;
+transition: all 0.2s ease-in-out; /* adding transition for the hover effect */
+}
+
+.btn:hover {
+background-color: #342D38;
+color: #FFFCF9;
+}
+
+
+.btn:active {
+    animation: bounce 0.3s ease-in-out; /* making the button bounce when it is being clicked */
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
+/* back to top button formatting
+-------------------------------------- */
+
+.to-top {
+    background: #FFFCF9;
+    position: fixed;
+    bottom: 16px;
+    right:62px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#A89EDA;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+}
+  
+  
