@@ -65,3 +65,129 @@ div{
     justify-content: center;
     width: 100%;
 }
+
+
+/* end section formatting
+-------------------------------------- */
+
+#endSection{
+    position: relative;
+    height: 800px;
+    background: #ED727B;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  #endSection {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .imageTitle {
+    max-width: 80%;
+  }
+
+  .contactForm {
+    max-width: 90%;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 769px) {
+    #endSection {
+      height: 600px;
+    }
+  
+    .imageTitle {
+      max-width: 50%;
+    }
+  
+    .contactForm {
+      max-width: 50%;
+    }
+  
+    input[type="text"],
+    textarea {
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    button {
+      width: auto;
+      font-size: 20px;
+    }
+  }
+
+
+/* contact form Formatting
+-------------------------------------- */
+
+.contactForm{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.contactForm input[type="text"] {
+    border: #FFFCF9;
+    border-radius: 20px; /* set the border radius to make it round*/
+    padding: 10px; /* add some padding to make the input look nicer */
+    font-size: 16px; 
+}
+
+textarea{
+    border: #FFFCF9;
+    border-radius: 20px; /* set the border radius to make it round*/
+    padding: 8px; /* add some padding to make the input look nicer */
+    font-size: 16px; 
+}
+
+.btn {
+display: block;
+margin-top: 30px;
+margin-right: auto;
+margin-left: auto;
+background-color: #342D38;
+color: #FFFCF9;
+border-radius: 25px;
+border: none;
+padding: 15px 25px;
+font-size: 16px;
+cursor: pointer;
+transition: all 0.2s ease-in-out; /* adding transition for the hover effect */
+}
+
+.btn:hover {
+background-color: #6D435A;
+color: #FFFCF9;
+}
+
+
+.btn:active {
+    animation: bounce 0.3s ease-in-out; /* making the button bounce when it is being clicked */
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}

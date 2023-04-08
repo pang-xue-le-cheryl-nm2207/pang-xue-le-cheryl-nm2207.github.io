@@ -14,7 +14,7 @@ html, body {
 
 nav {
     position: fixed;
-    background-color: #A89EDA;
+    background-color: #6D435A;
     top: 0px;
     left: 0;
     width: 100%;
@@ -54,7 +54,7 @@ nav a {
   
 nav a:hover {
     background-color: #FFFCF9;
-    color: #A89EDA;
+    color: #6D435A;
     border: 2px solid #FFFCF9;
 }
 
@@ -65,14 +65,14 @@ nav a:hover {
 #section2{
     padding-top: 70px; /* add 50px of space to the bottom */
     height:800px;
-    background: #A89EDA;
+    background: #6D435A;
     display: inline-block;
     width: 100%;
 }
 
 #section3{
     height:800px;
-    background: #A89EDA;
+    background: #6D435A;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -80,14 +80,14 @@ nav a:hover {
 
 #section4{
     height:800px;
-    background: #A89EDA;
+    background: #6D435A;
     display: inline-block;
     width: 100%;
 }
 
 #section5{
     height:800px;
-    background: #A89EDA;
+    background: #6D435A;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -95,30 +95,47 @@ nav a:hover {
 
 #section6{
     height:800px;
-    background: #A89EDA;
+    background: #6D435A;
     display: inline-block;
     width: 100%;
 }
 
 #section7{
     height:800px;
-    background: #A89EDA;
+    background: #6D435A;
     display: inline-block;
     width: 100%;
 }
 
 #section8{
     height:800px;
-    background: #A89EDA;
+    background: #6D435A;
     display: inline-block;
     width: 100%;
 }
 
 #section9{
     height:1000px;
-    background: #A89EDA;
+    background: #6D435A;
     display: inline-block;
     width: 100%;
+}
+
+#section10{
+    height:200px;
+    background: #6D435A;
+    display: flex;
+    width: 100%;
+}
+
+#surpriseSection{
+    background: #6D435A;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 #endSection{
@@ -133,12 +150,63 @@ nav a:hover {
     width: 100%;
 }
 
+@media only screen and (max-width: 768px) { 
+    /* making it responsive */
+  #endSection {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .imageTitle {
+    max-width: 80%;
+  }
+
+  .contactForm {
+    max-width: 90%;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #endSection {
+    height: 600px;
+  }
+
+  .imageTitle {
+    max-width: 50%;
+  }
+
+  .contactForm {
+    max-width: 50%;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  button {
+    width: auto;
+    font-size: 20px;
+  }
+}
 
 
 /* Text Formatting Colour
 -------------------------------------- */
 .pinkText { 
-    color:#F1939A; 
+    color:#E34A6F ; 
 }
 
 .blackText { 
@@ -242,7 +310,7 @@ button {
 
 
 button:hover > img {
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
   }
 
 /* dropDown Formatting
@@ -264,6 +332,72 @@ button:hover > img {
     font-family: 'Montserrat';
     font-weight: 600;
 }
+
+
+/* surprise heart Formatting
+-------------------------------------- */
+
+.heart{
+    height: 70px;
+    width: 70px;
+    background: #E34A6F;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #E34A6F;
+    animation: heart 0.6s linear infinite ;
+}
+
+/* this part to create the heart beating animation */
+/* scale to change the size of the beating heart */
+
+@keyframes heart {
+    0%{
+        transform: rotate(-45deg) scale(1.5);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.2);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.9);
+    }
+}
+
+.heart:before{
+    content: '';
+    position:absolute;
+    height: 70px;
+    width: 70px;
+    background: #E34A6F;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #E34A6F;
+}
+
+.heart:after{
+    content: '';
+    position:absolute;
+    height: 70px;
+    width: 70px;
+    background: #E34A6F;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #E34A6F;
+}
+
+.heart-text {
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
 
 
 /* contact form Formatting
@@ -294,8 +428,8 @@ display: block;
 margin-top: 30px;
 margin-right: auto;
 margin-left: auto;
-background-color: #FFFCF9;
-color: #342D38;
+background-color: #342D38;
+color: #FFFCF9;
 border-radius: 25px;
 padding: 15px 25px;
 font-size: 16px;
@@ -304,7 +438,7 @@ transition: all 0.2s ease-in-out; /* adding transition for the hover effect */
 }
 
 .btn:hover {
-background-color: #342D38;
+background-color: #6D435A;
 color: #FFFCF9;
 }
 
@@ -323,7 +457,7 @@ color: #FFFCF9;
     100% {
       transform: translateY(0);
     }
-  }
+}
   
   
 /* back to top button formatting
@@ -341,7 +475,7 @@ color: #FFFCF9;
     align-items: center;
     justify-content: center;
     font-size:32px;
-    color:#A89EDA;
+    color:#6D435A;
     text-decoration: none;
     opacity:0;
     pointer-events: none;

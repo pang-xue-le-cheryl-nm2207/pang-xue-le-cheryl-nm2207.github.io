@@ -32,6 +32,8 @@ window.addEventListener("scroll", () => {
 ////////////////////////  START OF CHART JS  ////////////////////////////
 /////////////////////////////////////////////////////////////////////////
 
+Chart.defaults.global.defaultFontColor = '#FFFCF9';
+
 const years = [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022];
 
 const increasingSinglesLineChart = {
@@ -42,7 +44,7 @@ const increasingSinglesLineChart = {
             data: [93.2, 93, 93.1, 91.5, 93.3, 93.1, 94.4, 95.1, 94.8, 96.1, 96.4, 96.7, 97.7, 97.2, 96.9, 96.7, 97.1, 97.1, 97.1, 96.9, 97.8],
             borderWidth: 2,
             backgroundColor: "transparent",
-            borderColor: "rgba(239,187,185,255)"
+            borderColor: "rgba(255,163,163,255)"
         },
         {
             label: "25-29",
@@ -223,18 +225,18 @@ const whyDontDate = {
     data: [58, 57, 48, 37, 36],
     fill: false,
     backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 205, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
+        '#FF9F9F',
+        '#FFBA7B',
+        '#FFE4B0',
+        '#C6DFA6',
+        '#CBF6FF',
     ],
     borderColor: [
-      'rgb(255, 99, 132)',
-      'rgb(255, 159, 64)',
-      'rgb(255, 205, 86)',
-      'rgb(75, 192, 192)',
-      'rgb(54, 162, 235)',
+        '#FF9F9F',
+        '#FFBA7B',
+        '#FFE4B0',
+        '#C6DFA6',
+        '#CBF6FF',
     ],
     borderWidth: 1
   }]
@@ -272,26 +274,26 @@ const waysToMeet = {
     data: [90, 88, 82, 66, 60, 58, 44, 39, 37],
     fill: false,
     backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(255, 159, 64, 0.2)',
-        'rgba(255, 205, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(201, 203, 207, 0.2)',
-        'rgba(255, 105, 180, 0.2)',
-        'rgba(75, 0, 130, 0.2)',
+        '#FF9F9F',
+        '#FFBA7B',
+        '#FFE4B0',
+        '#C6DFA6',
+        '#CBF6FF',
+        '#A480DE',
+        '#C68B8B',
+        '#EDBE92',
+        '#A6C5BA',
     ],
     borderColor: [
-        'rgb(255, 99, 132)',
-        'rgb(255, 159, 64)',
-        'rgb(255, 205, 86)',
-        'rgb(75, 192, 192)',
-        'rgb(54, 162, 235)',
-        'rgb(153, 102, 255)',
-        'rgb(201, 203, 207)',
-        'rgb(255, 105, 180)',
-        'rgb(75, 0, 130)',
+        '#FF9F9F',
+        '#FFBA7B',
+        '#FFE4B0',
+        '#C6DFA6',
+        '#CBF6FF',
+        '#A480DE',
+        '#C68B8B',
+        '#EDBE92',
+        '#A6C5BA',
     ],
     borderWidth: 1
   }]
@@ -344,22 +346,22 @@ const data = {
     label: '2016',
     data: [13, 26, 27, 20, 5],
     fill: true,
-    backgroundColor: 'rgba(255, 159, 64, 0.2)',
-    borderColor: 'rgb(255, 159, 64)',
-    pointBackgroundColor: 'rgb(255, 159, 64)',
-    pointBorderColor: 'rgb(255, 159, 64)',
-    pointHoverBackgroundColor: 'rgb(255, 159, 64)',
-    pointHoverBorderColor: 'rgb(255, 159, 64)'
+    backgroundColor: 'rgba(168, 211, 113, 0.2)',
+    borderColor: 'rgb(168, 211, 113)',
+    pointBackgroundColor: 'rgb(168, 211, 113)',
+    pointBorderColor: 'rgb(168, 211, 113)',
+    pointHoverBackgroundColor: 'rgb(168, 211, 113)',
+    pointHoverBorderColor: 'rgb(168, 211, 1136)'
   },{
     label: '2021',
     data: [29, 21, 18, 16, 9],
     fill: true,
-    backgroundColor: 'rgba(255, 205, 86, 0.2)',
-    borderColor: 'rgb(255, 205, 86)',
-    pointBackgroundColor: 'rgb(255, 205, 86)',
-    pointBorderColor: 'rgb(255, 205, 86)',
-    pointHoverBackgroundColor: 'rgb(255, 205, 86)',
-    pointHoverBorderColor: 'rgb(255, 205, 86)'
+    backgroundColor: 'rgba(160, 238, 255, 0.2)',
+    borderColor: 'rgb(160, 238, 255)',
+    pointBackgroundColor: 'rgb(160, 238, 255)',
+    pointBorderColor: 'rgb(160, 238, 255)',
+    pointHoverBackgroundColor: 'rgb(160, 238, 255)',
+    pointHoverBorderColor: 'rgb(160, 238, 255)'
   }]
 };
 
@@ -371,7 +373,7 @@ new Chart("radarChart", {//!--Notice here we put the id of the "new chart" we cr
         scale: {
             ticks: {
               display: true,
-              backdropColor: '#A89EDA',
+              backdropColor: '#6D435A',
             }
           },
         legend: {
