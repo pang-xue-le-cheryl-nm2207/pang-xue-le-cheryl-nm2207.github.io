@@ -6,8 +6,32 @@ html, body {
     padding:0%;
     font-family: 'Montserrat', sans-serif;
     color: #FFFCF9;
+    background-color: #6D435A;
 }
 
+
+
+/* scrollbar formatting
+-------------------------------------- */
+
+::-webkit-scrollbar{
+    width: 12px
+}
+
+::-webkit-scrollbar-track{
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: #342D38;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #FFFCF9;
+    border-radius: 6px;
+}
 
 /* nav bar formatting
 -------------------------------------- */
@@ -41,7 +65,6 @@ nav ul {
 
 nav a {
     display: flex;
-    
     background-color: transparent;
     border: 2px solid #FFFCF9;
     color: #FFFCF9;
@@ -214,7 +237,7 @@ nav a:hover {
 }
 
 
-/* Formatting Positions
+/* Formatting Positions TEXT
 -------------------------------------- */
 
 .textPos{ 
@@ -241,6 +264,9 @@ nav a:hover {
     margin-top: 3%;
 }
 
+
+/* Formatting Positions CHARTS
+-------------------------------------- */
 .linechart-container{
     margin-left: 9%;
     margin-right: auto;
@@ -310,7 +336,7 @@ button {
 
 
 button:hover > img {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
   }
 
 /* dropDown Formatting

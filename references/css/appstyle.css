@@ -13,57 +13,96 @@ html, body {
 -------------------------------------- */
 
 nav {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    color: #FFFCF9;
-    padding: 30px ;
-    text-align: left;
-    
+  position: fixed;
+  background-color: #ED727B;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  color: #FFFCF9;
+  padding: 30px ;
+  text-align: left;
+  z-index: 9999;/* to make nav bar the absolute top*/
+  transition: top 0.3s ease-in-out;
 }
 
+
+.nav-hide {
+  top: -100px;
+}
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
-  
 
-  
+
 nav a {
-    display: block;
-    
-    background-color: transparent;
-    border: 2px solid #FFFCF9;
-    color: #FFFCF9;
-    border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-nav a:hover {
-    background-color: #FFFCF9;
-    color: #ED727B;
-    border: 2px solid #FFFCF9;
+  display: flex;
+  background-color: transparent;
+  border: 2px solid #FFFCF9;
+  color: #FFFCF9;
+  border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
+nav a:hover {
+  background-color: #FFFCF9;
+  color: #ED727B;
+  border: 2px solid #FFFCF9;
+}
+
+
+
+/* scrollbar formatting
+-------------------------------------- */
+
+::-webkit-scrollbar{
+  width: 12px
+}
+
+::-webkit-scrollbar-track{
+  background-color:rgba(255, 255, 255, 0.5);
+}
+
+
+::-webkit-scrollbar-thumb{
+  background-color: #342D38;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #FFFCF9;
+  border-radius: 6px;
+}
+
+/* content formatting
+-------------------------------------- */
 
 div{
-    position: relative;
-    height: 800px;
-    background: #ED727B;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+  padding-top: 120px; /* add 50px of space to the bottom */
+  height:700px;
+  background: #ED727B;
+  display: inline-block;
+  width: 100%;
+}
+
+.textPos{ 
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 40px;
+}
+
+.smalltext{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 40px;
+  font-size: small;
 }
 
 

@@ -9,6 +9,12 @@ html, body {
 }
 
 
+/* hidescroll bar
+-------------------------------------- */
+::-webkit-scrollbar{
+    display:none;
+}
+
 
 
 
@@ -53,7 +59,6 @@ html, body {
     top: 400px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 0;
     z-index: 0;
     pointer-events: none; /* make it ignore mouse clicks */
 }
@@ -103,7 +108,8 @@ nav a {
     padding: 14px 16px;
     text-decoration: none;
 }
-  
+
+/* so that it changes colour*/
 nav a:hover {
     background-color: #FFFCF9;
     color: #ED727B;
